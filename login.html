@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+    }
+
+    .login-page {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    /* LEFT SIDE */
+    .left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left img {
+      max-width: 90%;
+    }
+
+    /* RIGHT SIDE */
+    .right {
+      width: 40%;
+    }
+
+    .right h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #1c1d1f;
+    }
+
+    .right label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      color: #1c1d1f;
+    }
+
+    .right input {
+      width: 100%;
+      padding: 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #d1d7dc;
+      margin-bottom: 18px;
+    }
+
+    .continue-btn {
+      width: 100%;
+      background: #6a2bd9;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .continue-btn:hover {
+      background: #5624d0;
+    }
+
+    .divider {
+      text-align: center;
+      color: #6a6f73;
+      font-size: 14px;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      position: absolute;
+      width: 35%;
+      height: 1px;
+      background: #d1d7dc;
+      top: 50%;
+    }
+
+    .divider::before {
+      left: 0;
+    }
+
+    .divider::after {
+      right: 0;
+    }
+
+    .socials {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .social-btn {
+      width: 55px;
+      height: 55px;
+      border: 1px solid #6a2bd9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      cursor: pointer;
+      background: white;
+    }
+
+    .signup-box {
+      border-top: 1px solid #d1d7dc;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .signup-box a {
+      color: #6a2bd9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .org-login {
+      margin-top: 15px;
+      background: #f7f9fa;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 14px;
+    } 
+
+    .org-login a {
+      color: #6a2bd9;
+      font-weight: bold;
+      text-decoration: none;
+    }.org-btn:hover {
+      background: #5624d0;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .login-page {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .left, .right {
+        width: 100%;
+      }
+
+      .left img {
+        max-width: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-page">
+
+    <!-- LEFT ILLUSTRATION -->
+    <div class="left">
+      <!-- Replace src with your own image if you want -->
+      <img src="https://img.freepik.com/free-vector/flat-creativity-concept-illustration_52683-64279.jpg" alt="Login Illustration">
+    </div>
+
+    <!-- RIGHT LOGIN FORM -->
+    <div class="right">
+      <h1>Log in to continue your<br>learning journey</h1>
+
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <button class="continue-btn">Continue</button>
+      </form>
+
+      <div class="divider">Other log in options</div>
+
+      <div class="socials">
+        <div class="social-btn">G</div>
+        <div class="social-btn">f</div>
+        <div class="social-btn"></div>
+      </div>
+
+      <div class="signup-box">
+        Don’t have an account?
+        <a href="#">Sign up</a>
+      </div>
+
+      <div class="org-login">
+        <a href="#">Log in with your organization</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

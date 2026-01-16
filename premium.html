@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #5c0068, #840095);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #ffffff;
+      width: 100%;
+      max-width: 450px;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      text-align: center;
+      color: #5c0068;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .locked-box {
+      background: #f3e8ff;
+      border: 2px dashed #840095;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      color: #5c0068;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .price-box {
+      background: #5c0068;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .price-box span {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .price-box p {
+      font-size: 14px;
+      margin-top: 5px;
+      opacity: 0.9;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row div {
+      flex: 1;
+    }
+
+    .pay-btn {
+      width: 100%;
+      background: #840095;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .pay-btn:hover {
+      background: #00b524;
+    }
+
+    .note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Buy Premium</h1>
+    <p class="subtitle">Unlock premium to see our exclusive Courses</p>
+
+    <div class="locked-box">
+      🔒 Buy Premium to see this content and access all paid courses
+    </div>
+
+    <div class="price-box">
+      <span>$100 / Month</span>
+      <p>Unlimited access • Cancel anytime</p>
+    </div>
+
+    <form>
+      <label>Card Holder Name</label>
+      <input type="text" placeholder="Maria Javed">
+
+      <label>Card Number</label>
+      <input type="text" placeholder="1234 5678 9012 3456">
+
+      <div class="row">
+        <div>
+          <label>Expiry Date</label>
+          <input type="text" placeholder="MM / YY">
+        </div>
+        <div>
+          <label>CVV</label>
+          <input type="password" placeholder="***">
+        </div>
+      </div>
+
+      <button class="pay-btn">Pay $100 & Upgrade</button>
+    </form>
+
+    <div class="note">
+      ⚠️ Demo payment page — no real payment is processed.
+    </div>
+  </div>
+
+</body>
+</html>

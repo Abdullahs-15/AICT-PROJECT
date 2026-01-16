@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Step navigation styles */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.step {
+  font-size: 16px;
+  color: #840095;
+}
+
+.step.active {
+  font-weight: bold;
+}
+
+form .form-group {
+  margin-bottom: 20px;
+}
+
+form .form-group label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+form select,
+form textarea,
+form input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #0077b6;
+}
+
+form .checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+form .checkbox-group label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+form .submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .submit-button:hover {
+  background-color: #840095;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Transformation starts here</h1>
+      <p>Let's build a smarter workforce together</p>
+      <p>2–3 minutes, tops. No long forms here.</p>
+    </header>
+
+    <div class="steps">
+      <span class="step active">Step 1: Your needs</span>
+      <span class="step">Step 2: Your email</span>
+      <span class="step">Step 3: Your details</span>
+    </div>
+
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="peopleToTrain">Number of people to train *</label>
+        <select id="peopleToTrain" name="peopleToTrain" required>
+          <option value="" disabled selected>Select...</option>
+          <option value="AI Upskilling">AI Upskilling</option>
+          <option value="Company-wide Skilling">Company-wide Skilling</option>
+          <option value="Leadership Development">Leadership Development</option>
+          <option value="Certification Prep">Certification Prep</option>
+          <option value="Compliance Training">Compliance Training</option>
+          <option value="Learning Program Design/Launch">Learning Program Design/Launch</option>
+        </select>
+      </div>
+
+      <div class="checkbox-group">
+        <label>What are your organization's training needs?</label>
+        <input type="checkbox" id="AIUpskilling" name="trainingNeeds" value="AI Upskilling">
+        <label for="AIUpskilling">AI Upskilling</label>
+        <input type="checkbox" id="companyWideSkilling" name="trainingNeeds" value="Company-wide Skilling">
+        <label for="companyWideSkilling">Company-wide Skilling</label>
+        <input type="checkbox" id="leadershipDevelopment" name="trainingNeeds" value="Leadership Development">
+        <label for="leadershipDevelopment">Leadership Development</label>
+        <input type="checkbox" id="complianceTraining" name="trainingNeeds" value="Compliance Training">
+        <label for="complianceTraining">Compliance Training</label>
+        <input type="checkbox" id="learningProgram" name="trainingNeeds" value="Learning Program Design/Launch">
+        <label for="learningProgram">Learning Program Design/Launch</label>
+      </div>
+
+      <div class="form-group">
+        <label for="additionalDetails">Additional details</label>
+        <textarea id="additionalDetails" name="additionalDetails" rows="4" placeholder="Tell us more about your needs..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
