@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Try Team Plan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1c1d1f;
+}
+
+/* MAIN LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+}
+
+/* LEFT SIDE */
+.left h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+/* INFO BOX */
+.info-box {
+  background: #f7f2ff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 22px;
+  color: #6d28d9;
+}
+
+.info-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* LINK */
+.demo-link {
+  color: #6d28d9;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.demo-link:hover {
+  text-decoration: underline;
+}
+
+/* TRUST */
+.trust {
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+.logos {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+/* RIGHT FORM */
+.form-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.subdomain {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subdomain span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* BUTTON COLOR TRANSFORMATION */
+button:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+/* FOOTER TEXT */
+.small-text {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.small-text a {
+  color: #6d28d9;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="left">
+    <h1>Try Team Plan for 14 days</h1>
+    <p>
+      Create an account to try our Business Plan. When you’re ready,
+      upgrade your account for full access.
+    </p>
+
+    <div class="info-box">
+      <div class="info-item">
+        <div class="icon">▶</div>
+        <div>
+          <strong>Sample content from our library</strong>
+          From communication skills to cloud technologies.
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon">👥</div>
+        <div>
+          <strong>Easily add your team</strong>
+          Get your team learning right away.
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon">📊</div>
+        <div>
+          <strong>Team plan features</strong>
+          Reporting, analytics, and certification prep.
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="demo-link">Training 21 or more people? Request a demo.</a>
+
+    <div class="trust">
+      Trusted by thousands of companies worldwide
+      <div class="logos">
+        <span>VW</span>
+        <span>SAMSUNG</span>
+        <span>CISCO</span>
+        <span>AT&T</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="form-box">
+    <div class="form-group">
+      <input type="email" placeholder="Work Email *">
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <input type="text" placeholder="First Name *">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Last Name *">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <input type="text" placeholder="Job Title *">
+      </div>
+      <div class="form-group">
+        <input type="tel" placeholder="Phone Number *">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="text" placeholder="Company Name *">
+    </div>
+
+    <div class="form-group">
+      <select>
+        <option>Number of people to train *</option>
+        <option>1–5</option>
+        <option>6–20</option>
+        <option>21+</option>
+      </select>
+    </div>
+
+    <div class="form-group subdomain">
+      <span>https://</span>
+      <input type="text" placeholder="Custom Account Subdomain *">
+      <span>.youracademy.com</span>
+    </div>
+
+    <div class="form-group">
+      <input type="password" placeholder="Your Password (minimum 6 characters) *">
+    </div>
+
+    <button>Start Free Trial</button>
+
+    <div class="small-text">
+      By signing up, you agree to our
+      <a href="#">Terms</a> and
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
